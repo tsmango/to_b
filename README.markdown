@@ -1,5 +1,5 @@
 Description
------------
+===========
 
 A simple plugin that adds a .to_b method to various classes to aide in testing 
 for boolean values against variously typed objects.
