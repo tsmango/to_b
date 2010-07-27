@@ -17,8 +17,8 @@ false and true values for specific parameters.
 
 An example of why I want the ability the test for nil, false and true is that 
 if a boolean parameter is left out I want my SQL to search WHERE true OR false, 
-if the parameter is set to true I want it to search WHERE true and false, false. 
-It is simply easier to have a scope like the following:
+if the parameter is set to true I want it to search WHERE true and if the parameter 
+is false, false. It is simply easier to have a scope like the following:
 
     named_scope :with_tip, lambda {|value| value.to_b.nil? ? {} : {:conditions => {:tip => value.to_b}}}
 
