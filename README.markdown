@@ -15,7 +15,7 @@ in boolean fields. However, to_b returning nil in certain circumstances allows
 me the flexibility when using this in conjunction with an API to accept nil, 
 false and true values for specific parameters.
 
-An example of why I want the ability the test for nil, false and true is that 
+An example of why I want the ability to test for nil, false and true is that 
 if a boolean parameter is left out I want my SQL to search WHERE true OR false, 
 if the parameter is set to true I want it to search WHERE true and if the parameter 
 is false, false. It is simply easier to have a scope like the following:

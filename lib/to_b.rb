@@ -39,9 +39,9 @@ end
 class String
   def to_b
     case self.downcase.strip
-    when 'true', '1', 'T', 't'
+    when 'true', '1', 't', 'yes', 'y'
       return true
-    when 'false', '0', 'F', 'f'
+    when 'false', '0', 'f', 'no', 'n'
       return false
     else
       return nil
